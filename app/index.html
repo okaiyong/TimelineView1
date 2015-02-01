@@ -11,6 +11,7 @@
 	<script language="javascript" type="text/javascript" src="lib/jquery/jquery-timeline.js"></script>	
 	
 	<title>Timeline View</title>
+	<br>Activity ID: <input type="text"/>	<!--to test when click on event, id is displayed -->
 </head>
 <body >
 	<header>
@@ -156,19 +157,6 @@
 							"type": "image",
 							"caption":"Audio",
 						}
-					},
-					{
-						"activity_id": "090",
-						"startDate":"2014-08-09",
-						"endDate":"",
-						"headline":"Own Audio and image",
-						"text":""
-						"asset": {
-							"asset":"media/img/NDP4.jpg",
-							"thumbnail":"img/thumbnail/audio logo.jpg",
-							"type": "image",
-							"caption":"Audio",
-						}
 					}
 					
 					//To do (1) pptx, docx, (2)pdf (3)own map
@@ -183,8 +171,12 @@
 					}
 				}
 			};
-
+			
+			
 			$("#jquery-timeline").jqueryTimeline(data);
+			
+
+			
 
 			// TODO: display 2 timelines at the same time
 		});
